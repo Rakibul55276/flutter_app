@@ -1,31 +1,25 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(
+void main() => runApp(const MyApp());
 
-    MaterialApp(
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-      home:Scaffold(
+  @override
+  Widget build(BuildContext context) {
+    const String appTitle = 'Flutter layout demo';
+    return MaterialApp(
+      title: appTitle,
+      home: Scaffold(
         backgroundColor: Colors.blueGrey,
-        appBar: AppBar(
-          toolbarHeight:70.0,
-          centerTitle: true,
-          title:Text(' I Am Rich'),
-        titleTextStyle: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
-         
-         backgroundColor: Colors.blueGrey[900],
+        appBar: AppBar(title: const Text(appTitle),centerTitle: true, backgroundColor: Colors.blueGrey[900], titleTextStyle: const TextStyle(color: Colors.white),),
+        body: const Center(
+          child: Text('Hello World',
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-        
-        body: Center(
-          child: Image(
-            image: AssetImage('images/diamond.png'),
-          ),
-          ),
-        )
-      
       ),
-   
-  
-  );
+    );
+  }
 }
