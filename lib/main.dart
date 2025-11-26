@@ -17,50 +17,19 @@ class MyApp extends StatelessWidget {
     //   centerTitle: true,),
 
 
-     body:  SafeArea(
-       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget> [
-Container(
-        color:Colors.red,
-      width: 100.00,
-  height: double.infinity,
-     
-        child: Text('Container 1'),
+     body: SafeArea(
+        child: Column(
+          children: <Widget>[
+
+
+
+            
+          ],
         ),
-    
-      // MIDDLE COLUMN
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.blue,
-                  ),
-                ],
-              ),
-
-    
-        Container(
-        color:Colors.grey,
-      height: double.infinity,
-      width: 100.00,
-        child: Text('Container 3'),
-        ),
-
-        ],
-
-       ),
      ),
-     ),
-     );
-     
+    ),
+    );
+  
     
   }
 }
