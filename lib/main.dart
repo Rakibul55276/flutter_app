@@ -9,30 +9,46 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
-    //  appBar: AppBar(
-    //   title: const Text('My Flutter App'),
-    //   centerTitle: true,),
-
-
-     body: SafeArea(
-        child: Column(
-          children: <Widget>[
-
-
-
-            
-          ],
+        body: SafeArea(
+          child: Column(
+            //mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/diamond.png'),
+              ),
+              Text(
+                'Rakib Yu',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'SourceCodePro',
+                  fontSize: 20.0,
+                  color: Colors.teal.shade100,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+             
+            ],
+          ),
         ),
-     ),
-    ),
+      ),
     );
-  
-    
   }
 }
+
 
 // class MyHomePage extends StatefulWidget {
 //   const MyHomePage({super.key});

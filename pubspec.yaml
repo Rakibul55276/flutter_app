@@ -73,7 +73,7 @@ flutter:
 
     - family: SourceCodePro
       fonts:
-        - asset: fonts/SourceCodePro-veriableFont_wght.ttf
+        - asset: fonts/SourceCodePro-variableFont_wght.ttf
         
 
 
