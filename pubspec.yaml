@@ -63,7 +63,11 @@ flutter:
     - images/avatar.png
     - images/diamond.png
     - images/dice1.png
-
+    - images/dice2.png
+    - images/dice3.png
+    - images/dice4.png
+    - images/dice5.png
+    - images/dice6.png
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
